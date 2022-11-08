@@ -39,7 +39,7 @@ header ul {
     display: none;
 }
 
-span::after {
+header span::after {
     font-family: Times, serif;
     content: "▾";
 }

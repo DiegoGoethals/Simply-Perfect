@@ -1,0 +1,15 @@
+footer {
+    background-color: #eabde6;
+    font-family: Belleza, sans-serif;
+    padding: 0.7rem;
+}
+
+footer h1 {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+}
