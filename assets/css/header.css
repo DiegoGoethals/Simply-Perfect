@@ -10,8 +10,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 75vw;
-    font-weight: bold;
     font-family: Belleza, sans-serif;
+    color: #737373;
+    font-weight: bold;
+    border-bottom: 0.1rem solid lightgray;
+    padding-bottom: 1.2rem;
 }
 
 nav:hover, label:hover {
@@ -29,7 +32,7 @@ header > p {
 }
 
 header img {
-    width: 13vw;
+    width: 12.5vw;
     height: auto;
     margin: 1rem;
 }
@@ -37,6 +40,17 @@ header img {
 header ul {
     margin-top: 0.5rem;
     display: none;
+    position: absolute;
+    height: 100%;
+    top: 1.6rem;
+    background-color: white;
+    padding: 0 0.8rem;
+    text-align: left;
+    width: max-content;
+}
+
+li {
+    margin: 0.5rem 0;
 }
 
 header span::after {
@@ -47,4 +61,10 @@ header span::after {
 .dropDown {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.active {
+    text-decoration: underline black;
+    color: black;
 }

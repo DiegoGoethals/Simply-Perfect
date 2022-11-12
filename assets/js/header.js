@@ -3,6 +3,14 @@
 init();
 
 function init() {
+    createHeader();
+
+    document.querySelectorAll("nav > *").forEach(element => {
+        element.addEventListener("click", setActive);
+    });
+}
+
+function createHeader() {
     document.querySelector("header").insertAdjacentHTML("afterbegin",
         `<p>Gratis verzendkosten vanaf 40 euro.</p><img src="assets/images/logo.webp" alt="logo">
             <nav><p>Home</p>
@@ -33,4 +41,11 @@ function init() {
                 </ul>
             </div>
             <p>VZW VOOR WILLIAM</p></nav>`);
+}
+
+function setActive(e) {
+    document.querySelectorAll("nav *").forEach(element => {
+        element.classList.remove("active");
+    });
+    e.target.classList.add("active");
 }

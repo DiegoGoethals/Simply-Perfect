@@ -3,7 +3,7 @@
 init();
 
 function init() {
-    document.querySelectorAll("span").forEach( item => {
+    document.querySelectorAll("nav > *").forEach( item => {
         item.addEventListener("mouseover", openMenu);
     });
 }
@@ -11,10 +11,15 @@ function init() {
 function openMenu(e) {
     document.querySelectorAll("ul").forEach(ul => {
         if (ul !== document.getElementById(e.target.innerText) && ul.style.display !== "none") {
-            closeMenu(ul);
+            if (!e.currentTarget.classList.contains("dropDown")) {
+                closeMenu(ul);
+            }
         }
     });
-    document.getElementById(e.target.innerText).style.display = "block";
+    if (document.getElementById(e.target.innerText)) {
+        sessionStorage.setItem("hover", e.target.innerText);
+        document.getElementById(e.target.innerText).style.display = "block";
+    }
 }
 
 function closeMenu(ul) {

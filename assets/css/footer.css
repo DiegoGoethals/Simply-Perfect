@@ -2,6 +2,9 @@ footer {
     background-color: #eabde6;
     font-family: Belleza, sans-serif;
     padding: 0.7rem;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
 }
 
 footer h1 {
