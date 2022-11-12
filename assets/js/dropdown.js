@@ -11,7 +11,7 @@ function init() {
 function openMenu(e) {
     document.querySelectorAll("ul").forEach(ul => {
         if (ul !== document.getElementById(e.target.innerText) && ul.style.display !== "none") {
-            if (!e.currentTarget.classList.contains("dropDown")) {
+            if (!(e.currentTarget === ul.parentElement)) {
                 closeMenu(ul);
             }
         }
