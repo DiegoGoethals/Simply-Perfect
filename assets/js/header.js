@@ -40,7 +40,20 @@ function createHeader() {
                     <li>Kralenpennen</li>
                 </ul>
             </div>
-            <p>VZW VOOR WILLIAM</p></nav>`);
+            <div class="dropDown">
+                <span>Epoxy</span>
+                <ul id="Epoxy">
+                    <li>Sleutelhangers</li>
+                    <li>Onderzetters</li>
+                </ul>
+            </div>
+            <p>VZW VOOR WILLIAM</p>
+            <div id="icons">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>`);
 }
 
 function setActive(e) {

@@ -17,7 +17,6 @@ function openMenu(e) {
         }
     });
     if (document.getElementById(e.target.innerText)) {
-        sessionStorage.setItem("hover", e.target.innerText);
         document.getElementById(e.target.innerText).style.display = "block";
     }
 }

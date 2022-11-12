@@ -41,12 +41,12 @@ header ul {
     margin-top: 0.5rem;
     display: none;
     position: absolute;
-    height: 100%;
     top: 1.6rem;
     background-color: white;
     padding: 0 0.8rem;
     text-align: left;
     width: max-content;
+    box-shadow: 0.2rem 0.2rem #ccc;
 }
 
 li {
@@ -64,7 +64,21 @@ header span::after {
     position: relative;
 }
 
-.active {
+:not(#icons).active {
     text-decoration: underline black;
+    color: black;
+}
+
+#icons *.active {
+    text-decoration: none;
+}
+
+#icons * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+#icons *:hover {
     color: black;
 }
