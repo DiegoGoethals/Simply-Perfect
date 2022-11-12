@@ -48,4 +48,7 @@ function setActive(e) {
         element.classList.remove("active");
     });
     e.target.classList.add("active");
+    if (e.target.tagName === "LI") {
+        e.target.parentElement.parentElement.children[0].classList.add("active");
+    }
 }
