@@ -2,8 +2,6 @@ footer {
     background-color: #eabde6;
     font-family: Belleza, sans-serif;
     padding: 0.7rem;
-    position: absolute;
-    bottom: 0;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

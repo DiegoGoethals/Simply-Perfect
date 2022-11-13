@@ -1,0 +1,37 @@
+section {
+    font-family: "Belleza", "sans-serif";
+    color: #737373;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #eabde6;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+article {
+    text-align: left;
+    max-width: 45vw;
+    padding: 3rem;
+}
+
+article ul {
+    margin-left: 1.5rem;
+}
+
+section img {
+    height: 213px;
+}
+
+article ul li::before {
+    content: "\2022";
+    color: #737373;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

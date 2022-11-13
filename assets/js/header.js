@@ -16,9 +16,9 @@ function createHeader() {
                 <li><i class="fa-solid fa-check"></i>Gratis verzendkosten vanaf 40 euro.</li>
             </ul>
             <img src="assets/images/logo.webp" alt="logo">
-            <nav><p>Home</p>
+            <nav><a href="index.html"><p>Home</p></a>
             <div class="dropDown">
-                <span>Koordjes</span>
+                <a href="koordjes.html"><span>Koordjes</span></a>
                 <ul id="Koordjes">
                     <li>Speenkoorden</li>
                     <li>Bijtringen</li>
@@ -70,15 +70,12 @@ function setActive(e) {
 }
 
 function initActive() {
-    if (document.querySelector("title").innerText === "Simply Perfect Accesoires") {
-        document.querySelectorAll(" nav p").forEach(p => {
-           if (p.innerText === "Home") {
-               p.classList.add("active");
-           }
-        });
+    const title = document.querySelector("title").innerHTML;
+    if (title === "Simply Perfect Accesoires") {
+        document.querySelector(" nav p").classList.add("active");
     } else {
         document.querySelectorAll("nav *").forEach(element => {
-            if (element.innerText === document.querySelector("title").innerText) {
+            if (element.innerHTML === title) {
                 element.classList.add("active");
                 if (element.tagName === "LI") {
                     element.parentElement.parentElement.children[0].classList.add("active");
