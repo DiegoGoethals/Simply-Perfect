@@ -9,7 +9,7 @@ function init() {
 }
 
 function openMenu(e) {
-    document.querySelectorAll("ul").forEach(ul => {
+    document.querySelectorAll("header ul:not(#headerText)").forEach(ul => {
         if (ul !== document.getElementById(e.target.innerText) && ul.style.display !== "none") {
             if (!(e.currentTarget === ul.parentElement)) {
                 closeMenu(ul);

@@ -4,15 +4,18 @@ init();
 
 function init() {
     createHeader();
-
     document.querySelectorAll("nav > *").forEach(element => {
         element.addEventListener("click", setActive);
     });
+    initActive();
 }
 
 function createHeader() {
     document.querySelector("header").insertAdjacentHTML("afterbegin",
-        `<p>Gratis verzendkosten vanaf 40 euro.</p><img src="assets/images/logo.webp" alt="logo">
+        `<ul id="headerText">
+                <li><i class="fa-solid fa-check"></i>Gratis verzendkosten vanaf 40 euro.</li>
+            </ul>
+            <img src="assets/images/logo.webp" alt="logo">
             <nav><p>Home</p>
             <div class="dropDown">
                 <span>Koordjes</span>
@@ -63,5 +66,24 @@ function setActive(e) {
     e.target.classList.add("active");
     if (e.target.tagName === "LI") {
         e.target.parentElement.parentElement.children[0].classList.add("active");
+    }
+}
+
+function initActive() {
+    if (document.querySelector("title").innerText === "Simply Perfect Accesoires") {
+        document.querySelectorAll(" nav p").forEach(p => {
+           if (p.innerText === "Home") {
+               p.classList.add("active");
+           }
+        });
+    } else {
+        document.querySelectorAll("nav *").forEach(element => {
+            if (element.innerText === document.querySelector("title").innerText) {
+                element.classList.add("active");
+                if (element.tagName === "LI") {
+                    element.parentElement.parentElement.children[0].classList.add("active");
+                }
+            }
+        });
     }
 }
