@@ -1,0 +1,18 @@
+#main h1 {
+    font-size: 4rem;
+    color: #eabde6;
+    text-align: center;
+    padding: 3rem;
+}
+
+article {
+    color: #737373;
+    text-align: left;
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 3rem;
+}
+
+article p {
+    margin-top: 1rem;
+}

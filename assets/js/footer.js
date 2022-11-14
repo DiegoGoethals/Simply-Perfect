@@ -20,6 +20,6 @@ function createFooter() {
                                 </a>
                             </div>
                             <div id="contributors"><p>© 2022 SimplyPerfectAccesoires</p>
-                            <em>Website made by <a href="https://www.diegogoethals.be/" target="_blank">Diego Goethals</a></em></div>`;
+                            <em>Website made by <a id="diego" href="https://www.diegogoethals.be/" target="_blank">Diego Goethals</a></em></div>`;
     document.querySelector("footer").insertAdjacentHTML("afterbegin", contactInfo);
 }

@@ -5,4 +5,5 @@ a:not(header a) {
 
 #main {
     min-height: 35vh;
+    font-family: "Belleza", "sans-serif";
 }
