@@ -6,6 +6,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    position: absolute;
+    bottom: 0;
 }
 
 footer h1 {
