@@ -6,6 +6,7 @@ function init() {
     createHeader();
     document.querySelectorAll("nav > *").forEach(element => {
         element.addEventListener("click", setActive);
+        element.addEventListener("click", activeClick);
     });
     initActive();
 }
@@ -20,34 +21,35 @@ function createHeader() {
             <div class="dropDown">
                 <a href="koordjes.html"><span>Koordjes</span></a>
                 <ul id="Koordjes">
-                    <li>Speenkoorden</li>
-                    <li>Bijtringen</li>
-                    <li>Tashangers</li>
-                    <li>Jaszippers</li>
-                    <li>Popje van geluk</li>
+                    <li><a href="shop.html">Speenkoorden</a></li>
+                    <li><a href="shop.html">Bijtringen</a></li>
+                    <li><a href="shop.html">Tashangers</a></li>
+                    <li><a href="shop.html">Jaszippers</a></li>
+                    <li><a href="shop.html">Popje van geluk</a></li>
                 </ul>
             </div>
-            <p>Sleutelhangers</p><p>Setjes</p>
+            <a href="shop.html"><p>Sleutelhangers</p></a>
+            <a href="shop.html"><p>Setjes</p></a>
             <div class="dropDown">
-                <span>Accesoires</span>
+                <a href="shop.html"><span>Accesoires</span></a>
                 <ul id="Accesoires">
-                    <li>Armbanden</li>
-                    <li>Kettingen</li>
+                    <li><a href="shop.html">Armbanden</a></li>
+                    <li><a href="shop.html">Kettingen</a></li>
                 </ul>
             </div>
             <div class="dropDown">
-                <span>Cadeautjes</span>
+                <a href="shop.html"><span>Cadeautjes</span></a>
                 <ul id="Cadeautjes">
-                    <li>Meter en Peter</li>
-                    <li>Mama en Papa</li>
-                    <li>Kralenpennen</li>
+                    <li><a href="shop.html">Meter en Peter</a></li>
+                    <li><a href="shop.html">Mama en Papa</a></li>
+                    <li><a href="shop.html">Kralenpennen</a></li>
                 </ul>
             </div>
             <div class="dropDown">
-                <span>Epoxy</span>
+                <a href="shop.html"><span>Epoxy</span></a>
                 <ul id="Epoxy">
-                    <li>Sleutelhangers</li>
-                    <li>Onderzetters</li>
+                    <li><a href="shop.html">Sleutelhangers</a></li>
+                    <li><a href="shop.html">Onderzetters</a></li>
                 </ul>
             </div>
             <a href="william.html"><p>VZW VOOR WILLIAM</p></a>
@@ -77,10 +79,14 @@ function initActive() {
         document.querySelectorAll("nav *").forEach(element => {
             if (element.innerHTML === title) {
                 element.classList.add("active");
-                if (element.tagName === "LI") {
-                    element.parentElement.parentElement.children[0].classList.add("active");
+                if (element.parentElement.tagName === "LI") {
+                    element.parentElement.parentElement.parentElement.children[0].classList.add("active");
                 }
             }
         });
     }
+}
+
+function activeClick(e) {
+    localStorage.setItem("active", e.target.innerHTML);
 }
