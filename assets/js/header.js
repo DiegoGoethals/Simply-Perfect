@@ -45,13 +45,7 @@ function createHeader() {
                     <li><a href="shop.html">Kralenpennen</a></li>
                 </ul>
             </div>
-            <div class="dropDown">
-                <a href="shop.html"><span>Epoxy</span></a>
-                <ul id="Epoxy">
-                    <li><a href="shop.html">Sleutelhangers</a></li>
-                    <li><a href="shop.html">Onderzetters</a></li>
-                </ul>
-            </div>
+            <a href="shop.html"><p>Onderzetters</p></a>
             <a href="william.html"><p>VZW VOOR WILLIAM</p></a>
             <div id="icons">
                 <i class="fa-solid fa-user"></i>

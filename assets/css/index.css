@@ -3,13 +3,14 @@
     color: #eabde6;
     text-align: center;
     padding: 3rem;
+    text-transform: uppercase;
 }
 
 article {
     color: #737373;
     text-align: left;
     margin: 0 auto;
-    width: 50%;
+    width: 75%;
     padding-bottom: 3rem;
 }
 
