@@ -50,7 +50,7 @@ function createHeader() {
                     <li>Onderzetters</li>
                 </ul>
             </div>
-            <p>VZW VOOR WILLIAM</p>
+            <a href="william.html"><p>VZW VOOR WILLIAM</p></a>
             <div id="icons">
                 <i class="fa-solid fa-user"></i>
                 <i class="fa-solid fa-magnifying-glass"></i>
