@@ -3,13 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: solid 1px #737373;
+    width: 20vw;
 }
 
 #main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     width: 80vw;
     margin: 0 auto;
+    padding: 2%;
 }

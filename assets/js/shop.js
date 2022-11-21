@@ -15,11 +15,12 @@ function fillShop(type) {
         type = type.substring(0, type.length - 1);
     }
     fetchFromServer(`${_config.URL}/products/${type}`, "GET").then(result => {
+        // const image = "images/${type}/${result.name}.webp";
         const shop = document.getElementById("main");
         result.forEach(item => {
             shop.insertAdjacentHTML("beforeend", `<div class="shopItem">
                 <p>${item.name}</p>
-                <p>${item.price}</p>
+                <p>${item.price.toFixed(2)}</p>
             </div>`);
         });
     });
