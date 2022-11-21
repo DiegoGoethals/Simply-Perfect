@@ -25,10 +25,16 @@ function createHeader() {
                     <li><a href="shop.html">Bijtringen</a></li>
                     <li><a href="shop.html">Tashangers</a></li>
                     <li><a href="shop.html">Jaszippers</a></li>
-                    <li><a href="shop.html">Popje van geluk</a></li>
                 </ul>
             </div>
-            <a href="shop.html"><p>Sleutelhangers</p></a>
+            <div class="dropDown">
+                <a href="shop.html"><span>Sleutelhangers</span></a>
+                <ul id="Sleutelhangers">
+                    <li><a href="shop.html">Rechte sleutelhangers</a></li>
+                    <li><a href="shop.html">Popjes van geluk</a></li>
+                    <li><a href="shop.html">Epoxy sleutelhangers</a></li>
+                </ul>
+            </div>
             <a href="shop.html"><p>Setjes</p></a>
             <div class="dropDown">
                 <a href="shop.html"><span>Accesoires</span></a>
